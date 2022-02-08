@@ -13,6 +13,34 @@
       #outlet {
         height: 100%;
       }
+
+       #outlet > .leaving {
+         animation: 2s fadeOut ease-in-out;
+       }
+
+      #outlet > .entering {
+        animation: 2s fadeIn linear;
+      }
+
+      @keyframes fadeOut {
+        from {
+          opacity: 1;
+        }
+
+        to {
+          opacity: 0;
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
     </style>
     <!-- index.ts is included here automatically (either by the dev server or during the build) -->
   </head>
